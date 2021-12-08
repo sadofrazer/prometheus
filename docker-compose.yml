@@ -25,12 +25,10 @@ services:
       - nginx
 
   nginx:
-    image: nginx
+    image: sadofrazer/youtube-lab
     restart: always
     ports:
       - 80:80
-    volumes:
-      - ./index.html:/usr/share/nginx/html
 
   alertmanager:
     image: prom/alertmanager:v0.15.2
